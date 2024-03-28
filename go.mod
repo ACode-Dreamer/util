@@ -1,4 +1,4 @@
-module util
+module github.com/ACode-Dreamer/util
 
 go 1.22.1
 
