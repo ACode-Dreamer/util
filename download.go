@@ -12,7 +12,7 @@ import (
 )
 
 // Download 异步带进度下载文件
-func Download(task []string) {
+func Download(task []string, fileFolder string) {
 	//"https://media.w3.org/2010/05/sintel/trailer.mp4",
 	//"http://www.w3school.com.cn/example/html5/mov_bbb.mp4",
 	//"https://www.w3schools.com/html/movie.mp4",
@@ -20,7 +20,7 @@ func Download(task []string) {
 	//"http://speedtest.tele2.net/100MB.zip",
 
 	// 文件保存目录
-	fileFolder := "d:/"
+	//fileFolder := "d:/"
 
 	var wg sync.WaitGroup
 	for _, addr := range task {
